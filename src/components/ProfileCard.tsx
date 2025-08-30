@@ -1,7 +1,6 @@
 "use client";
-
-import { ChevronDown, Github, Linkedin,  } from "lucide-react";
-import muradsharifzada from "../assets/murad.jpg";
+import { ChevronDown, Github, Linkedin } from "lucide-react";
+import muradsharifzada from "../assets/sharimurad.jpg";
 
 export default function ProfileCard() {
   const scrollToPortfolio = () => {
@@ -26,13 +25,13 @@ export default function ProfileCard() {
         <h2 className="text-2xl font-bold mb-1 tracking-wide">
           Murad Sharifzada
         </h2>
-     <p className="text-red-500 text-4xl font-extrabold mb-6">
-  Full Stack Developer
-</p>
+        <p className="text-red-500 text-4xl font-extrabold mb-6">
+          Full Stack Developer
+        </p>
 
         {/* Short bio */}
         <p className="text-sm text-gray-400 mb-6">
-Crafting scalable full-stack applications with React, TypeScript & modern backends. Turning ideas into reliable products.
+          Crafting scalable full-stack applications with React, TypeScript & modern backends. Turning ideas into reliable products.
         </p>
 
         {/* Social links */}
@@ -51,13 +50,23 @@ Crafting scalable full-stack applications with React, TypeScript & modern backen
           >
             <Linkedin className="h-5 w-5" />
           </a>
-   
+        </div>
+
+        {/* Download CV button */}
+        <div className="mb-6">
+          <a
+            href="/muradsharifzade.pdf"
+            download
+            className="px-4 py-2 bg-red-600 text-white rounded-lg shadow-md hover:bg-red-700 transition-all duration-300"
+          >
+            Download CV
+          </a>
         </div>
 
         {/* Scroll button */}
         <button
           onClick={scrollToPortfolio}
-          className="p-3 rounded-full border border-red-600 text-red-500 hover:bg-red-600 hover:text-white transition-all duration-300 animate-bounce"
+          className="p-3 rounded-full border border-red-600 text-red-500 hover:bg-red-600 hover:text-white transition-all duration-300 "
         >
           <ChevronDown className="h-6 w-6" />
         </button>
