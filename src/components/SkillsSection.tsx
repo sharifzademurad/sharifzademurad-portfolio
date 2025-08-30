@@ -1,12 +1,9 @@
 "use client";
 
 import {
-  Code,
   Server,
   Wrench,
   Layout,
-  Palette,
-  Database,
 } from "lucide-react";
 
 export default function SkillsSection() {
